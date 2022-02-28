@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@1,100&display=swap");
-
+@font-face {
+  font-family: Norse;
+  src: url(fonts/Norsebold.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +19,6 @@ body {
 .container {
   display: flex;
   height: 700px;
-  max-width: 90%;
   border-radius: 1rem;
   box-shadow: 0 0 15px 2px #ddd;
   overflow: hidden;
@@ -103,13 +105,32 @@ input#user_password {
   font-size: 10px;
   color: red;
 }
-/*.image-content {
-     background-image: url(./unsplash-building.jpeg);
-     background-size: cover;
-     background-position: center;
-     height: 100%;
-     width: 40vh;
-}
-*/
 
-.banner {width: 366px;position: absolute;background-color: black;height: 120px;z-index: 10;margin-top: 250px;opacity: .2;}
+.banner {
+  position: absolute;
+}
+.banner-background {
+  width: 366px;
+  position: relative;
+  background-color: black;
+  height: 120px;
+  z-index: 10;
+  bottom: -250px;
+  opacity: 0.1;
+  color: white;
+}
+.banner-logo-and-text {
+  font-family: Norse;
+  color: white;
+  font-size: 80px;
+  z-index: 20;
+  position: relative;
+  bottom: -140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-logo img {
+    height: 100px;
+    width: 80px;
+}
