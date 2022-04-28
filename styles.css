@@ -18,12 +18,13 @@ body {
 }
 .container {
   display: flex;
-  height: 700px;
+  height: 80%;
   border-radius: 1rem;
   box-shadow: 0 0 15px 2px #ddd;
   overflow: hidden;
   align-items: center;
   background-color: #f2f2fdb8;
+  justify-content: center;
 }
 header {
   padding: 30px;
@@ -110,14 +111,14 @@ input#user_password {
   position: absolute;
 }
 .banner-background {
-  width: 366px;
-  position: relative;
-  background-color: black;
+  width: 295px;
   height: 120px;
-  z-index: 10;
-  bottom: -250px;
-  opacity: 0.1;
+  background-color: black;
   color: white;
+  position: relative;
+  bottom: -250px;
+  z-index: 10;
+  opacity: 0.1;
 }
 .banner-logo-and-text {
   font-family: Norse;
